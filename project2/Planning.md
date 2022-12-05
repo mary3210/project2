@@ -7,6 +7,6 @@ This is the Rick and Morty character app. It is a way for people to understand t
 
 ### Home 
 
-![Homepage!]"https://www.figma.com/file/k8gzaiJVrKeHMZOQMtED9g/Untitled?t=eRRAU27wgytnxqWF-3"
+![Homepage!](https://www.figma.com/file/k8gzaiJVrKeHMZOQMtED9g/Untitled?t=eRRAU27wgytnxqWF-3.jpg)
 
 
