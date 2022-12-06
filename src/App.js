@@ -1,8 +1,8 @@
-
 import './App.css';
 import React from "react";
 import CharacterImages from './Components/CharacterImages';
-import CharacterDetails from './Components/CharacterDetails'
+import CharacterDetails from './Components/CharacterDetails';
+import CharacterFooter from './Components/CharacterFooter'
 import {Route, Routes} from "react-router-dom";
 import ReactDom from 'react-dom'
 
@@ -16,6 +16,7 @@ function App() {
     <main>
       <CharacterImages />
       <CharacterDetails />
+      <CharacterFooter />
     </main>
 
     </div>
