@@ -16,10 +16,15 @@ function App() {
       <h1>Rick and Morty App</h1>
       </header>
     <main>
-      <CharacterImages />
-      <CharacterDetails />
-      <CharacterFooter />
+      <Routes>
+        <Route path="/" element= {<CharacterImages />}/>
+        <Route path="/details/:id" element= {<CharacterDetails />}/>
+      </Routes>
+      
     </main>
+    <footer>
+    <CharacterFooter />
+    </footer>
 
     </div>
     </>
