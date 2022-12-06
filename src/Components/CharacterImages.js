@@ -1,6 +1,6 @@
 import React from "react";
 import {useState, useEffect} from "react";
-
+import {Link} from "react-router-dom";
 
 export default function CharacterImages(){
     const [characterImages, setCharacterImages] = useState([]);
@@ -15,8 +15,13 @@ export default function CharacterImages(){
     }, [])
     return (
         <section className="container">
+            {characterImages.map((character) => ( 
+                <div className="card-image">
+                <img src={characterImages.image} alt={characterImages.name} />
+              </div>
+))}
             <p>whoo i show up!</p>
-
+        
         </section>
     )
     
