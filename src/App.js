@@ -2,6 +2,7 @@
 import './App.css';
 import React from "react";
 import CharacterImages from './Components/CharacterImages';
+import CharacterDetails from './Components/CharacterDetails'
 import {Route, Routes} from "react-router-dom";
 import ReactDom from 'react-dom'
 
@@ -14,6 +15,7 @@ function App() {
       </header>
     <main>
       <CharacterImages />
+      <CharacterDetails />
     </main>
 
     </div>

@@ -5,7 +5,8 @@ import {Link} from "react-router-dom";
 export default function CharacterImages(){
     const [characterImages, setCharacterImages] = useState([]);
     useEffect(() => {
-        fetch("https://rickandmortyapi.com/character")
+        
+        fetch("https://cors-anywhere.herokuapp.com/"+"https://rickandmortyapi.com/",{headers: {"Access-Control-Allow-Origin": "*"}})
         .then((res) => res.json())
         .then((json) => {
             setCharacterImages(json);
