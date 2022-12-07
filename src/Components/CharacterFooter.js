@@ -12,11 +12,11 @@ export default function CharacterFooter(){
     return (
         <div className="characterFooter">
         <p>Im the footer that works </p>
-        {id >= 2 &&
-            <h1> <a href={url2}> See Previous Character </a></h1>
-        }
         {id <= 19 && 
         <h1> <a href={url1}> See Next Character </a></h1>
+        }
+        {id >= 2 &&
+            <h1> <a href={url2}> See Previous Character </a></h1>
         }
         </div>
     )
