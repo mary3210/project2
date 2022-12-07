@@ -6,17 +6,17 @@ export default function CharacterImages(){
     const [characterImages, setCharacterImages] = useState([]);
     useEffect(() => {
         
-        fetch("https://rickandmortyapi.com/api/character/1")
+        fetch("https://rickandmortyapi.com/api/character/")
         .then((res) => res.json())
         .then((json) => {
-            setCharacterImages([json]);
+            setCharacterImages(json.results);
             
         })
         .catch(console.error)
     }, []);
+    console.log(characterImages)
     return (
         <section className="container">
-            {console.log(characterImages)}
             {characterImages.map((character) => ( 
                
                 <Link to={`/details/${character.id}`} key={character.id}>
