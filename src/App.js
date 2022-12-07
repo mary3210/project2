@@ -23,7 +23,7 @@ function App() {
       
     </main>
     <footer>
-    <CharacterFooter />
+    
     </footer>
 
     </div>

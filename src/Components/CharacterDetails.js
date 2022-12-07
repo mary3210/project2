@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import CharacterFooter from "./CharacterFooter";
 
 export default function CharacterDetails(){
     const {id} = useParams()
@@ -24,6 +25,9 @@ export default function CharacterDetails(){
             <p>{character.species}</p>
             <p>{character.gender}</p>
             <p>{character.origin?.name}</p>
+            <footer>
+            <CharacterFooter />
+            </footer>
         </div>
     )
 
