@@ -13,9 +13,9 @@ function App() {
     <>
     <div className="App">
       <header>
-        <CharacterSearch />
+        
         <CharacterNavbar />
-      {/* <h1>Rick and Morty App</h1> */}
+        <CharacterSearch />
       </header>
     <main>
       <Routes>
