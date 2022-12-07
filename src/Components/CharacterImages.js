@@ -14,7 +14,6 @@ export default function CharacterImages(){
         })
         .catch(console.error)
     }, []);
-    console.log(characterImages)
     return (
         <section className="container">
             {characterImages.map((character) => ( 

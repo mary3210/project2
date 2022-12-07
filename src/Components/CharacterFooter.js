@@ -8,16 +8,16 @@ export default function CharacterFooter(){
     const url1 =`/details/${NumId + Number(1)}`
     const url2 =`/details/${NumId - Number(1)}`
 
-   
 
     return (
         <div className="characterFooter">
-            <p>Im the footer that works </p>
-            <h1> <a href={url1}> See Next Character </a></h1>
-            {id >= 2 &&
-                <h1> <a href={url2}> See Previous Character </a></h1>
-          
-            }
+        <p>Im the footer that works </p>
+        {id <= 19 && 
+        <h1> <a href={url1}> See Next Character </a></h1>
+        }
+        {id >= 2 &&
+            <h1> <a href={url2}> See Previous Character </a></h1>
+        }
         </div>
     )
 }

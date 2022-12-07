@@ -20,11 +20,7 @@ export default function CharacterDetails(){
         <div className="detailsContainer">
             <p>Character details works!</p>
             <img src={character.image} alt={character.name}/>
-            <p>{character.name}</p>
-            <p>{character.status}</p>
-            <p>{character.species}</p>
-            <p>{character.gender}</p>
-            <p>{character.origin?.name}</p>
+            <p>Hello, my name is {character.name}. I am currenltly {character.status}. I am a {character.gender} {character.species}. I am from planet {character.origin?.name}.</p>
             <footer>
             <CharacterFooter />
             </footer>
