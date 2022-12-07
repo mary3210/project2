@@ -18,12 +18,12 @@ export default function CharacterDetails(){
     return (
         <div className="detailsContainer">
             <p>Character details works!</p>
+            <img src={character.image} alt={character.name}/>
             <p>{character.name}</p>
             <p>{character.status}</p>
             <p>{character.species}</p>
             <p>{character.gender}</p>
-           
-            
+            <p>{character.origin?.name}</p>
         </div>
     )
 

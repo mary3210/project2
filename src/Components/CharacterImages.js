@@ -26,8 +26,8 @@ export default function CharacterImages(){
                 <img src={character.image} alt={character.name} />
             </div>
             <div>
-                
-                </div>
+            
+             </div>
               </div>
              
               </Link>            
