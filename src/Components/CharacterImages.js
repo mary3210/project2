@@ -20,13 +20,13 @@ export default function CharacterImages(){
             {characterImages.map((character) => ( 
                
                 <Link to={`/details/${character.id}`} key={character.id}>
-                {character.id}
+                <div> {character.name}</div>
                 <div className="card">
                 <div className="card-image">
                 <img src={character.image} alt={character.name} />
             </div>
             <div>
-                <p>whoo i show up!</p>
+                
                 </div>
               </div>
              
