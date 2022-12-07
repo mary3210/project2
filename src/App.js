@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <header>
         <CharacterNavbar />
-      <h1>Rick and Morty App</h1>
+      {/* <h1>Rick and Morty App</h1> */}
       </header>
     <main>
       <Routes>
