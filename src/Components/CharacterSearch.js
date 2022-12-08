@@ -2,8 +2,11 @@ import React from "react";
 import { useState, useEffect } from 'react'
 import CharacterList from "./CharacterList";
 
+
+
+
 export default function CharacterSearch(){
-    const Search = ({query, setQuery, children}) => {
+    const [query, setQuery] = useState("")
     
     
     
@@ -23,5 +26,5 @@ export default function CharacterSearch(){
 
     </div>
      )
-    }
+    
 }
