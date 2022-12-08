@@ -19,7 +19,7 @@ export default function CharacterSearch(){
     
     
     const handleChange = (e) => {
-        e.preventDefault();
+       // e.preventDefault();
         setSearchBarInput(e.target.value);
     }
     
@@ -54,6 +54,7 @@ export default function CharacterSearch(){
    placeholder="Search Character here"
    onChange={handleChange}
    value={searchBarInput} />
+   <button type="submit">Search</button>
         </div>
     )
 }
