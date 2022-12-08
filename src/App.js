@@ -7,8 +7,11 @@ import CharacterNavbar from './Components/CharacterNavbar'
 import CharacterSearch from './Components/CharacterSearch'
 import {Route, Routes} from "react-router-dom";
 import ReactDom from 'react-dom'
+import { useState } from 'react'
+
 
 function App() {
+  const [response, setResponse] = useState({}) 
   return (
     <>
     <div className="App">
@@ -19,7 +22,7 @@ function App() {
       </header>
     <main>
       <Routes>
-        <Route path="/" element= {<CharacterImages />}/>
+        <Route path="/" element= {<CharacterImages setResponse={setResponse}/>}/>
         <Route path="/details/:id" element= {<CharacterDetails />}/>
         {/* <Route path="/details/:id" element= {<CharacterSearch />}/> */}
       </Routes>
