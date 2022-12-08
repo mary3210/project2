@@ -21,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element= {<CharacterImages />}/>
         <Route path="/details/:id" element= {<CharacterDetails />}/>
+        {/* <Route path="/details/:id" element= {<CharacterSearch />}/> */}
       </Routes>
       
     </main>

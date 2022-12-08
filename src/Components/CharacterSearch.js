@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from 'react'
 import { useParams } from "react-router";
+import {Link} from "react-router-dom";
 
 export default function CharacterSearch(){
     const [searchBarInput, setSearchBarInput] = useState([])
@@ -22,39 +23,35 @@ export default function CharacterSearch(){
        // e.preventDefault();
         setSearchBarInput(e.target.value);
     }
-    
-    // if (searchBarInput.length > 0){
-    //     data.filter((Character) => {
-    //         return data.name.match(searchBarInput)
-    //     })
-    // }
-    
-        data.filter(post => {
-          if (searchBarInput === '') {
-            return post;
-          } else if (post.name.includes(data)) {
-            return post;
-          }
-        }).map((post, index) => (
-          <div className="box" key={index}>
-            <p>{post.name}</p>
-            <p>{post.image}</p>
-          </div>
-        ))
-      
+
+    {data.filter(value => {
+        if (searchBarInput === '') {
+            return value;
+          } else if (value.name.includes(searchBarInput)) {
+          return value;
+        }
+      }).map((value, index) => {
+        return (
+            <Link to={`/details/${value.id}`} key={value.id}>
+        <div className="box" key={index}>
+          <p>{value.name}</p>
+          <img src={value.image}/>
+        </div>
+        </Link>
+        )
+        })}
+
+        
 
     return (
 
         <div>
-
-
-
               <input
    type="text"
    placeholder="Search Character here"
    onChange={handleChange}
    value={searchBarInput} />
-   <button type="submit">Search</button>
-        </div>
-    )
+
+    </div>
+     )
 }
