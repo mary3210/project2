@@ -3,29 +3,57 @@ import { useState, useEffect } from 'react'
 import { useParams } from "react-router";
 
 export default function CharacterSearch(){
-    const [searchBar, setSearchBar] = useState([])
+    const [searchBarInput, setSearchBarInput] = useState([])
+    const [data, setData] = useState([])
     const {id} = useParams()
-    const Characters = `https://rickandmortyapi.com/api/character/`
-    console.log(typeof(Characters))
-    console.log(Characters)
+    useEffect(() => {
+        
+        fetch("https://rickandmortyapi.com/api/character/")
+        .then((res) => res.json())
+        .then((json) => {
+            setData(json.results);
+            
+        })
+        .catch(console.error)
+    }, []);
+    
+    
     const handleChange = (e) => {
         e.preventDefault();
-        setSearchBar(e.target.value);
+        setSearchBarInput(e.target.value);
     }
     
-    if (searchBar.length > 0){
-        searchBar.filter((Characters) => {
-            return Characters.id.match(searchBar)
-        })
-    }
-  
+    // if (searchBarInput.length > 0){
+    //     data.filter((Character) => {
+    //         return data.name.match(searchBarInput)
+    //     })
+    // }
+    
+        data.filter(post => {
+          if (searchBarInput === '') {
+            return post;
+          } else if (post.name.includes(data)) {
+            return post;
+          }
+        }).map((post, index) => (
+          <div className="box" key={index}>
+            <p>{post.name}</p>
+            <p>{post.image}</p>
+          </div>
+        ))
+      
+
     return (
+
         <div>
+
+
+
               <input
    type="text"
    placeholder="Search Character here"
    onChange={handleChange}
-   value={searchBar} />
+   value={searchBarInput} />
         </div>
     )
 }
