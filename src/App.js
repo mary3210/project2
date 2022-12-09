@@ -8,7 +8,7 @@ import CharacterSearch from './Components/CharacterSearch';
 import {Route, Routes} from "react-router-dom";
 import ReactDom from 'react-dom';
 import { useState } from 'react';
-// import './CharacterNavbar.css';
+
 
 
 

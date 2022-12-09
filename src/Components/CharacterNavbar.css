@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
+
+.titleDiv{
+    text-align: center;
+   }
+   .CharacterNavbar{
+    background-color:	purple;
+   }
+   .title {
+    color:	#31C1E7 ;
+    font-family: 'Creepster', cursive;
+    font-size: 60px;
+   }
+   
+   body{
+       background-color: green;
+   }
