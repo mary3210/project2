@@ -23,7 +23,8 @@ export default function CharacterSearch(){
    placeholder="Search Character here"
    onChange={handleChange}
    value={query} />
-
+    <CharacterList
+     data={query} value={query} />
     </div>
      )
     

@@ -5,9 +5,8 @@ import {Link} from "react-router-dom";
 import CharacterSearch from "./CharacterSearch";
 
 
-export default function CharacterList(){
-const SearchableList = ({list}) => {
-const [query, setQuery] = useState([])
+export default function CharacterList(props){
+const [char, setChar] = useState([])
 
 const {id} = useParams()
 useEffect(() => {
@@ -15,30 +14,30 @@ useEffect(() => {
     fetch("https://rickandmortyapi.com/api/character/")
     .then((res) => res.json())
     .then((json) => {
-        setQuery(json.results);
+        setChar(json.results);
         
     })
     .catch(console.error)
 }, []);
 
 
-const handleChange = (e) => {
-    // e.preventDefault();
-     setQuery(e.target.value);
- }
+// const handleChange = (e) => {
+//     // e.preventDefault();
+//      setChar(e.target.value);
+//  }
 return (
     <div>
-{query.filter(value => {
-    if (query === '') {
+{char.filter(value => {
+    if (char === '') {
         return value;
-      } else if (value.name.includes(query)) {
+      } else if (value.name.includes(char)) {
       return value;
     }
   }).map((value, index) => {
     return (
         <Link to={`/details/${value.id}`} key={value.id}>
     <div className="box" key={index}>
-      <p>{value.name}</p>
+      <p>{value.data}</p>
       <img src={value.image}/>
     </div>
     </Link>
@@ -49,6 +48,6 @@ return (
 
     </div>
 
-)}
+)
 
 }
