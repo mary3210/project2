@@ -1,6 +1,7 @@
 import React from "react";
 import {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
+import './CharacterImages.css'
 
 export default function CharacterImages(){
     const [characterImages, setCharacterImages] = useState([]);
