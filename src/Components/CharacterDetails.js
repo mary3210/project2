@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import CharacterFooter from "./CharacterFooter";
+import './CharacterDetails.css'
 
 export default function CharacterDetails(){
     const {id} = useParams()
@@ -18,7 +19,10 @@ export default function CharacterDetails(){
     
     return (
         <div className="detailsContainer">
-            <img src={character.image} alt={character.name}/>
+            
+            <img className="image1" src={character.image} alt={character.name}/>
+           
+            
             <p>Hello, my name is {character.name}. I am currenltly {character.status}. I am a {character.gender} {character.species}. I am from planet {character.origin?.name}.</p>
             <footer>
             <CharacterFooter />
