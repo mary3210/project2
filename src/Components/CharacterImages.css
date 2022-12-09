@@ -1,8 +1,11 @@
 .container {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr ;
 }
 .card{
-    padding: 20px;
+    padding: 10px;
+
 }
