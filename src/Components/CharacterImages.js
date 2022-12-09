@@ -16,21 +16,27 @@ export default function CharacterImages(){
         .catch(console.error)
     }, []);
     return (
+        
         <section className="container">
+            
             {characterImages.map((character) => ( 
-               
+              
                 <Link to={`/details/${character.id}`} key={character.id}>
-                <div> {character.name}</div>
+                    
+           <div> {character.name}</div>
                 <div className="card">
                 <div className="card-image">
-                <img src={character.image} alt={character.name} />
+                <img src={character.image} alt={character.id} />
             </div>
+            
             <div>
             
              </div>
               </div>
              
-              </Link>            
+              </Link> 
+               
+                     
 ))} 
             
         
