@@ -1,21 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
-
-
 .titleDiv{
     text-align: center;
-    
 }
+
    .CharacterNavbar{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    background-color: #7F00FF;
-    opacity: 0.5;
-    height: 150px;
+    background: linear-gradient(#8106fd, #693C5E );
+    height: 150px; 
+}
 
-    
-   }
    .title {
     color:	#31C1E7 ;
     font-family: 'Creepster', cursive;
@@ -23,5 +19,6 @@
     padding-left: 300px;
     margin-top: 4px;
     margin-bottom: -5px;
-   }
+}
+ 
    
