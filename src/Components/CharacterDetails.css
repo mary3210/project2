@@ -1,9 +1,37 @@
 .detailsContainer {
-    
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
-.image1 {
+.image1{
  border: #31C1E7 thick solid;
  border-radius: 300px;
+ margin: 10px; 
 }
+
+.detailsParagraph{
+    font-family: Creepster;
+    font-size: 30px;
+    color: white;
+}
+
+.characterFooter{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.seePrevs{
+    padding: 20px;
+    color: #31C1E7;
+    font-size: 20px;
+}
+
+.seeNext{
+    padding: 20px;
+    color:#31C1E7;
+    font-size: 20px;
+}
+

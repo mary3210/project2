@@ -2,7 +2,7 @@ import React from "react";
 import CharacterDetails from "./Components/CharacterDetails";
 import CharacterNavbar from "./Components/CharacterNavbar";
 import CharacterSearch from "./Components/CharacterSearch";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 function App() {
   return (
