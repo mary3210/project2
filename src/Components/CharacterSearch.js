@@ -2,6 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import './CharacterSearch.css'
+
 export default function CharacterSearch() {
   const [searchBarInput, setSearchBarInput] = useState([]);
   const [data, setData] = useState([]);
@@ -19,13 +21,17 @@ export default function CharacterSearch() {
   };
 
   return (
-    <div>
+    <div className="container">
+
+      <div className="searchBar">
       <input
         type="text"
         placeholder="Search Character here"
         onChange={handleChange}
         value={searchBarInput}
       />
+      </div>
+    <div className="testDiv"> 
       {data
         .filter((value) => {
           if (searchBarInput === "") {
@@ -37,13 +43,17 @@ export default function CharacterSearch() {
         .map((value, index) => {
           return (
             <Link to={`/details/${value.id}`} key={value.id}>
-              <div className="box" key={index}>
-                <p>{value.name}</p>
+              
+               <div className="characterName" > <p>{value.name}</p></div> 
+                <div className="cardClass">
+                <div id="imageClass">
                 <img src={value.image} />
+                </div>
               </div>
+       
             </Link>
           );
-        })}
+        })}</div>
     </div>
   );
 }
