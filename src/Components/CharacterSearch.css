@@ -1,4 +1,15 @@
+/* *{
+    border-style: solid;
+    border-color: red;
+} */
 
+body{
+    height: 100px;
+    background-color: lightblue;
+    margin: 0px;
+    /* background: url("https://wallpapercave.com/wp/wp6105436.jpg"); */
+       
+ }
 
 
 .testDiv{
@@ -29,6 +40,7 @@
     font-size: 20px;
     width: 300px;
     padding-left: 10px;
+    
 
 }
 
