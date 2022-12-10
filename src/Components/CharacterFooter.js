@@ -9,7 +9,6 @@ export default function CharacterFooter() {
 
   return (
     <div className="characterFooter">
-      <p>Im the footer that works </p>
       {id <= 19 && (
         <h1>
           {" "}

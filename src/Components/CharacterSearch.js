@@ -24,9 +24,9 @@ export default function CharacterSearch() {
     <div className="container">
 
       <div className="searchBar">
-      <input
+      <input className="text"
         type="text"
-        placeholder="Search Character here"
+        placeholder="Search Character Here"
         onChange={handleChange}
         value={searchBarInput}
       />

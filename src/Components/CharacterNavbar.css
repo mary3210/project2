@@ -4,16 +4,27 @@
 
 .titleDiv{
     text-align: center;
-   }
+    
+}
    .CharacterNavbar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     background-color:	purple;
+    height: 150px;
+
+    
    }
    .title {
     color:	#31C1E7 ;
     font-family: 'Creepster', cursive;
-    font-size: 60px;
+    font-size: 80px;
+    padding-left: 300px;
+    margin-top: 4px;
+    margin-bottom: -5px;
    }
    
    body{
+    height: 100px;
        background-color: green;
    }
