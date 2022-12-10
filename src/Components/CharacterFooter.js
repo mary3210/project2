@@ -12,15 +12,20 @@ export default function CharacterFooter() {
       {id <= 19 && (
         <h3>
           {" "}
-          <a href={url1} className="seeNext"> Next Character </a>
+          <a href={url1} className="seeNext">
+            {" "}
+            Next Character{" "}
+          </a>
         </h3>
       )}
       {id >= 2 && (
         <h3>
           {" "}
-          <a href={url2} className="seePrevs"> Previous Character </a>
+          <a href={url2} className="seePrevs">
+            {" "}
+            Previous Character{" "}
+          </a>
         </h3>
-       
       )}
     </div>
   );

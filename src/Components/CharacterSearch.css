@@ -1,16 +1,7 @@
-/* *{
-    border-style: solid;
-    border-color: red;
-} */
-
 body{
-    height: 100px;
-    background-color: lightblue;
-    margin: 0px;
-    /* background: url("https://wallpapercave.com/wp/wp6105436.jpg"); */
-       
+    margin: 0;
+    background: url("https://origaudiopromo.com/wp-content/uploads/2019/07/space-background-website.jpeg");  
  }
-
 
 .testDiv{
     display: grid;
@@ -21,12 +12,7 @@ body{
     margin: 10px 10px 10px 10px;
     margin-left: 150px;
     padding: 10px 10px 10px 10px;
-    grid-column-gap: 75px
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px; */
+    grid-column-gap: 75px;
 }
 
 .searchBar {
@@ -39,11 +25,19 @@ body{
 .text {
     font-size: 20px;
     width: 300px;
-    padding-left: 10px;
-    
-
+    padding-left: 10px;  
 }
 
-.characterName{
+.image2{
+    border-radius: 15%;
+    border:white solid;
+}
 
+.image2:hover {
+    opacity: 0.5;
+}
+
+.charName{
+    text-align:center;
+    color: white;
 }

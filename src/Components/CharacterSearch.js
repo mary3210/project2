@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
-import './CharacterSearch.css'
+import "./CharacterSearch.css";
 
 export default function CharacterSearch() {
   const [searchBarInput, setSearchBarInput] = useState([]);
@@ -22,38 +22,38 @@ export default function CharacterSearch() {
 
   return (
     <div className="container">
-
       <div className="searchBar">
-      <input className="text"
-        type="text"
-        placeholder="Search Character Here"
-        onChange={handleChange}
-        value={searchBarInput}
-      />
+        <input
+          className="text"
+          type="text"
+          placeholder="Search Character Here"
+          onChange={handleChange}
+          value={searchBarInput}
+        />
       </div>
-    <div className="testDiv"> 
-      {data
-        .filter((value) => {
-          if (searchBarInput === "") {
-            return value;
-          } else if (value.name.includes(searchBarInput)) {
-            return value;
-          }
-        })
-        .map((value, index) => {
-          return (
-            <Link to={`/details/${value.id}`} key={value.id}>
-              
-               <div className="characterName" > <p>{value.name}</p></div> 
-                <div className="cardClass">
-                <div id="imageClass">
-                <img src={value.image} />
+      <div className="testDiv">
+        {data
+          .filter((value) => {
+            if (searchBarInput === "") {
+              return value;
+            } else if (value.name.includes(searchBarInput)) {
+              return value;
+            }
+          })
+          .map((value, index) => {
+            return (
+              <Link to={`/details/${value.id}`} key={value.id}>
+                <div className="characterName">
+                  {" "}
+                  <p className="charName">{value.name}</p>
                 </div>
-              </div>
-       
-            </Link>
-          );
-        })}</div>
+                <div className="cardClass">
+                  <img className="image2" src={value.image} alt={value.name} />
+                </div>
+              </Link>
+            );
+          })}
+      </div>
     </div>
   );
 }
