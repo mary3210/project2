@@ -1,10 +1,14 @@
+
+
+
 .testDiv{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% ;
     grid-template-rows: 20% 20% 20% 20% ;
     grid-column: span 1/4 ;
     grid-row: 1/4;
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
+    margin-left: 150px;
     padding: 10px 10px 10px 10px;
     grid-column-gap: 75px
     /* display: flex;
@@ -12,6 +16,24 @@
     justify-content: center;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px; */
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    
+   
+
+    
+    
+}
+
+.text {
+    font-size: 20px;
+    width: 300px;
+    padding-left: 10px;
+
 }
 
 .characterName{
