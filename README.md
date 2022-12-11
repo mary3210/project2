@@ -2,7 +2,7 @@
 
 ## Description 
 The Rick and Morty Wiki app, is an application that uses the Rick and Morty [data base](https://rickandmortyapi.com/) to showcase characters from the show Rick and Morty. This allows a shortcut for users to find information on characters from the show in a fun way without needing to read data in JSON. 
-![App Image](./image/Screen%20Shot%202022-12-11%20at%2012.56.28%20PM.png)
+![App Image](./Image/Screenshot.png)
 
 ## Technologies Used
 * JavaScript
