@@ -20,7 +20,7 @@ The Rick and Morty Wiki app, is an application that uses the Rick and Morty [dat
 6. Go to browser and refresh localhost
 
 ## Contributions 
-For any contributions feel free to sumbit a pull request on this repository. 
+For any contributions feel free to submit a pull request on this repository. 
 
 ### Link to PLANNING.md
 [link to PLANNING.md](Planning.md)
