@@ -4,15 +4,17 @@ body{
  }
 
 .testDiv{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 20% 20% 20% 20% ;
     grid-template-rows: 20% 20% 20% 20% ;
     grid-column: span 1/4 ;
     grid-row: 1/4;
     margin: 10px 10px 10px 10px;
     margin-left: 150px;
-    padding: 10px 10px 10px 10px;
-    grid-column-gap: 75px;
+    grid-column-gap: 75px; */
+    margin: 0px 0px 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .searchBar {
@@ -31,6 +33,7 @@ body{
 .image2{
     border-radius: 15%;
     border:white solid;
+    margin: 0px 25px 0px 0px;
 }
 
 .image2:hover {
