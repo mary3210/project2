@@ -22,7 +22,7 @@ export default function CharacterDetails() {
       <img className="image1" src={character.image} alt={character.name} />
       <p className="detailsParagraph">
         Hello, my name is {character.name}.{" "}
-        <p>I am currenltly {character.status}.</p>
+        <p>I am currently {character.status}.</p>
         <p>
           I am a {character.gender} {character.species}.
         </p>{" "}
